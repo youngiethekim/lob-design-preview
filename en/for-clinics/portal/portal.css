@@ -327,4 +327,9 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
 .site-foot a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .site-foot a:hover { color: var(--teal); }
 .site-foot .slot b { color: var(--teal); }
-@media (max-width: 600px) { .top .back { display: none; } .mark { font-size: 18px; } .mark .leaf-img { height: 28px; } }
+.mark .tag { white-space: nowrap; }
+@media (max-width: 760px) { .top .back { display: none; } }
+@media (max-width: 600px) { .mark { font-size: 18px; } .mark .leaf-img { height: 28px; } }
+.top-in:has(#who .who) .back { display: none; }
+.top .who { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 260px; }
+@media (max-width: 760px) { .top .who { max-width: 150px; } }
