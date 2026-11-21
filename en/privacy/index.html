@@ -68,12 +68,15 @@
 
         <div class="relative group">
           <button type="button" class="flex items-center gap-1.5 py-2 hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-md" aria-haspopup="true">
-            Help &amp; FAQs
+            Help &amp; Resources
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full z-50 w-56 rounded-xl border border-brand-line bg-white p-4 shadow-xl text-[15px] font-normal">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full z-50 w-64 rounded-xl border border-brand-line bg-white p-4 shadow-xl text-[15px] font-normal">
             <ul class="space-y-1.5">
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/resources/">Patient resources</a></li>
               <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/faq/">Frequently asked questions</a></li>
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/appointments/">My appointments</a></li>
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/contact-us/">Contact a lab</a></li>
               <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/about/">About Lab Online Booking</a></li>
               <li><a href="/lob-design-preview/en/assistant/" class="hover:text-brand-blue text-left">Ask the Booking Assistant</a></li>
             </ul>
@@ -81,10 +84,7 @@
         </div>
 
         <!-- TODO: clinic portal URL -->
-        <a href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-brand-blue">
-          For Clinics
-          <svg class="h-[17px] w-[17px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4"/></svg>
-        </a>
+        <a href="/lob-design-preview/en/for-clinics/" class="flex items-center gap-2 hover:text-brand-blue">For Clinics</a>
       </div>
     </div>
 
@@ -112,11 +112,16 @@
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden lg:hidden border-t border-brand-line bg-white">
-    <div class="lp-container py-4 flex flex-col gap-1 text-base font-medium">
-      <a class="py-2.5" href="/lob-design-preview/en/bc/">Lab Locations</a>
-      <a class="py-2.5" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a>
-      <a class="py-2.5" href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener">For Clinics</a>
-      <a class="mt-2 inline-flex items-center justify-center rounded-[10px] bg-brand-blue h-12 text-white" href="/lob-design-preview/en/login/">Sign In</a>
+    <div class="lp-container py-4 flex flex-col text-base font-medium text-brand-ink">
+      <a class="mb-2 inline-flex items-center justify-center rounded-[10px] bg-gradient-to-b from-[#0d57b8] to-brand-blue-deep h-12 text-white" href="/lob-design-preview/en/book/">Book an Appointment</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/bc/">Find a Lab</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/appointments/">My Appointments</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/resources/">Patient Resources</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/assistant/">Booking Assistant</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/contact-us/">Contact a Lab</a>
+      <a class="py-3" href="/lob-design-preview/en/for-clinics/">For Clinics</a>
+      <a class="mt-2 inline-flex items-center justify-center rounded-[10px] border-[1.5px] border-brand-blue h-12 text-brand-blue" href="/lob-design-preview/en/login/">Sign In</a>
     </div>
   </div>
 </nav>
@@ -140,12 +145,12 @@
         <img src="/lob-design-preview/assets/footleaf.png" alt="" width="31" height="34" class="h-[34px] w-auto">
         <span class="font-heading text-[19px] sm:text-[21px] font-bold tracking-[-0.01em]">LabOnlineBooking.ca</span>
       </a>
-      <ul class="flex flex-nowrap items-center justify-center text-[14px] sm:text-[16.5px] font-medium whitespace-nowrap lg:ml-12">
+      <ul class="flex flex-wrap items-center justify-center gap-y-2 text-[14px] sm:text-[16.5px] font-medium whitespace-nowrap lg:ml-12">
         <li class="px-3 sm:px-6 lg:px-10 lg:border-l lg:border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/bc/">Lab Locations</a></li>
+        <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/resources/">Resources</a></li>
         <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a></li>
         <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink">
-          <a class="inline-flex items-center gap-2 hover:text-brand-blue" href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener">For Clinics
-            <svg class="h-[15px] w-[15px] sm:h-[18px] sm:w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          <a class="inline-flex items-center gap-2 hover:text-brand-blue" href="/lob-design-preview/en/for-clinics/">For Clinics
           </a>
         </li>
       </ul>

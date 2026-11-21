@@ -68,12 +68,15 @@
 
         <div class="relative group">
           <button type="button" class="flex items-center gap-1.5 py-2 hover:text-brand-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-md" aria-haspopup="true">
-            Help &amp; FAQs
+            Help &amp; Resources
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full z-50 w-56 rounded-xl border border-brand-line bg-white p-4 shadow-xl text-[15px] font-normal">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition absolute left-0 top-full z-50 w-64 rounded-xl border border-brand-line bg-white p-4 shadow-xl text-[15px] font-normal">
             <ul class="space-y-1.5">
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/resources/">Patient resources</a></li>
               <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/faq/">Frequently asked questions</a></li>
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/appointments/">My appointments</a></li>
+              <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/contact-us/">Contact a lab</a></li>
               <li><a class="hover:text-brand-blue" href="/lob-design-preview/en/about/">About Lab Online Booking</a></li>
               <li><a href="/lob-design-preview/en/assistant/" class="hover:text-brand-blue text-left">Ask the Booking Assistant</a></li>
             </ul>
@@ -81,10 +84,7 @@
         </div>
 
         <!-- TODO: clinic portal URL -->
-        <a href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-brand-blue">
-          For Clinics
-          <svg class="h-[17px] w-[17px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M19 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4"/></svg>
-        </a>
+        <a href="/lob-design-preview/en/for-clinics/" class="flex items-center gap-2 hover:text-brand-blue">For Clinics</a>
       </div>
     </div>
 
@@ -112,11 +112,16 @@
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden lg:hidden border-t border-brand-line bg-white">
-    <div class="lp-container py-4 flex flex-col gap-1 text-base font-medium">
-      <a class="py-2.5" href="/lob-design-preview/en/bc/">Lab Locations</a>
-      <a class="py-2.5" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a>
-      <a class="py-2.5" href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener">For Clinics</a>
-      <a class="mt-2 inline-flex items-center justify-center rounded-[10px] bg-brand-blue h-12 text-white" href="/lob-design-preview/en/login/">Sign In</a>
+    <div class="lp-container py-4 flex flex-col text-base font-medium text-brand-ink">
+      <a class="mb-2 inline-flex items-center justify-center rounded-[10px] bg-gradient-to-b from-[#0d57b8] to-brand-blue-deep h-12 text-white" href="/lob-design-preview/en/book/">Book an Appointment</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/bc/">Find a Lab</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/appointments/">My Appointments</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/resources/">Patient Resources</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/assistant/">Booking Assistant</a>
+      <a class="py-3 border-b border-brand-line" href="/lob-design-preview/en/contact-us/">Contact a Lab</a>
+      <a class="py-3" href="/lob-design-preview/en/for-clinics/">For Clinics</a>
+      <a class="mt-2 inline-flex items-center justify-center rounded-[10px] border-[1.5px] border-brand-blue h-12 text-brand-blue" href="/lob-design-preview/en/login/">Sign In</a>
     </div>
   </div>
 </nav>
@@ -142,7 +147,7 @@
           <label class="sr-only" for="f-test">Test type</label>
           <div class="relative min-w-0 lg:flex-1 lg:border-r lg:border-[#c5d1e2]"><select id="f-test" name="test" class="w-full min-w-0 appearance-none bg-white rounded-[9px] border border-[#c5d1e2] pl-3.5 pr-10 h-[48px] text-[15px] text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-blue/30 lg:border-0 lg:rounded-none"><option selected="">Lab Test (blood or urine)</option></select><svg class="pointer-events-none absolute right-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
           <label class="sr-only" for="f-req">Requisition status</label>
-          <div class="relative min-w-0 lg:flex-1"><select id="f-req" name="requisition" class="w-full min-w-0 appearance-none bg-white rounded-[9px] border border-[#c5d1e2] pl-3.5 pr-10 h-[48px] text-[15px] text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-blue/30 lg:border-0 lg:rounded-none"><option value="" selected="" disabled="">Requisition status</option><option>Patient will bring</option><option>Clinic will fax</option><option>Standing order</option></select><svg class="pointer-events-none absolute right-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
+          <div class="relative min-w-0 lg:flex-1"><select id="f-req" name="requisition" required class="w-full min-w-0 appearance-none bg-white rounded-[9px] border border-[#c5d1e2] pl-3.5 pr-10 h-[48px] text-[15px] text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-blue/30 lg:border-0 lg:rounded-none"><option value="" selected="" disabled="">Requisition status</option><option>Patient will bring</option><option>Clinic will fax</option><option>Standing order</option></select><svg class="pointer-events-none absolute right-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
           <button type="submit" class="sm:col-span-2 lg:-my-px lg:-mr-px inline-flex items-center justify-center gap-2 rounded-[10px] bg-gradient-to-b from-[#0d57b8] to-brand-blue-deep text-white font-medium shadow-md hover:from-brand-blue rounded-[9px] px-6 h-[48px] lg:h-auto text-[16px]">See Available Times <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </div>
       </form>
@@ -155,7 +160,7 @@
             <li class="flex gap-3"><svg class="mt-0.5 h-[22px] w-[22px] shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Bring your lab requisition and government-issued ID, such as your BC Services Card.</span></li>
             <li class="flex gap-3"><svg class="mt-0.5 h-[22px] w-[22px] shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Arrive 15 minutes early. If you are more than 5 minutes late, the appointment is forfeited.</span></li>
             <li class="flex gap-3"><svg class="mt-0.5 h-[22px] w-[22px] shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Follow the fasting instructions from your healthcare provider.</span></li></ul>
-          <a href="/lob-design-preview/en/faq/at-the-lab/" class="mt-3 inline-flex text-[14.5px] font-medium text-brand-blue hover:underline">More about your visit →</a></div>
+          <a href="/lob-design-preview/en/resources/prepare-for-your-lab-visit/" class="mt-3 inline-flex text-[14.5px] font-medium text-brand-blue hover:underline">Full visit checklist →</a></div>
       </div></div></section>
   <section id="nearby" class="scroll-mt-24 pt-2 pb-10"><div class="lp-container"><div class="flex items-center gap-5"><span class="hidden sm:block h-px flex-1 bg-brand-blue" aria-hidden="true"></span><h2 class="mx-auto text-center font-heading text-[21px] sm:text-[23px] lg:text-[27px] font-semibold tracking-[-0.01em] text-brand-ink">Other Labs Nearby</h2><span class="hidden sm:block h-px flex-1 bg-brand-blue" aria-hidden="true"></span></div><ul class="mt-5 grid gap-3 lg:grid-cols-3 lg:gap-5"><li><a href="/lob-design-preview/en/bc/vancouver-coastal-health/lab/north-vancouver/lions-gate-hospital/" class="group flex h-full items-center gap-4 rounded-[14px] border border-brand-line bg-white shadow-[0_2px_10px_rgba(11,23,54,0.06)] px-4 py-4 hover:border-brand-blue"><img src="/lob-design-preview/assets/pin.png" alt="" class="h-[28px] w-auto shrink-0"><span class="min-w-0 flex-1"><span class="block font-heading text-[16px] font-semibold leading-snug text-brand-ink group-hover:text-brand-blue">Lions Gate Hospital</span><span class="block mt-0.5 text-[13.5px] text-brand-slate">1st Floor - 240 East 13th Street, North Vancouver, BC V7L 2L6</span></span><svg class="h-5 w-5 shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li><li><a href="/lob-design-preview/en/bc/vancouver-coastal-health/lab/pemberton/pemberton-health-centre-laboratory/" class="group flex h-full items-center gap-4 rounded-[14px] border border-brand-line bg-white shadow-[0_2px_10px_rgba(11,23,54,0.06)] px-4 py-4 hover:border-brand-blue"><img src="/lob-design-preview/assets/pin.png" alt="" class="h-[28px] w-auto shrink-0"><span class="min-w-0 flex-1"><span class="block font-heading text-[16px] font-semibold leading-snug text-brand-ink group-hover:text-brand-blue">Pemberton Health Centre Laboratory</span><span class="block mt-0.5 text-[13.5px] text-brand-slate">1403 Portage Road, Pemberton, BC V0N 2L0</span></span><svg class="h-5 w-5 shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li><li><a href="/lob-design-preview/en/bc/vancouver-coastal-health/lab/richmond/richmond-hospital-laboratory/" class="group flex h-full items-center gap-4 rounded-[14px] border border-brand-line bg-white shadow-[0_2px_10px_rgba(11,23,54,0.06)] px-4 py-4 hover:border-brand-blue"><img src="/lob-design-preview/assets/pin.png" alt="" class="h-[28px] w-auto shrink-0"><span class="min-w-0 flex-1"><span class="block font-heading text-[16px] font-semibold leading-snug text-brand-ink group-hover:text-brand-blue">Richmond Hospital Laboratory</span><span class="block mt-0.5 text-[13.5px] text-brand-slate">2nd Floor, Rm 2552 South Tower 7000 Westminster Highway, Richmond, BC V6X 1A2</span></span><svg class="h-5 w-5 shrink-0 text-brand-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li></ul>
       <p class="mt-4 text-center"><a href="/lob-design-preview/en/bc/powell-river/" class="text-[15px] font-medium text-brand-blue hover:underline">See all Powell River labs →</a> <span class="mx-2 text-brand-line">|</span> <a href="/lob-design-preview/en/book/" class="text-[15px] font-medium text-brand-blue hover:underline">Find the soonest time at any lab →</a></p></div></section></main>
@@ -167,12 +172,12 @@
         <img src="/lob-design-preview/assets/footleaf.png" alt="" width="31" height="34" class="h-[34px] w-auto">
         <span class="font-heading text-[19px] sm:text-[21px] font-bold tracking-[-0.01em]">LabOnlineBooking.ca</span>
       </a>
-      <ul class="flex flex-nowrap items-center justify-center text-[14px] sm:text-[16.5px] font-medium whitespace-nowrap lg:ml-12">
+      <ul class="flex flex-wrap items-center justify-center gap-y-2 text-[14px] sm:text-[16.5px] font-medium whitespace-nowrap lg:ml-12">
         <li class="px-3 sm:px-6 lg:px-10 lg:border-l lg:border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/bc/">Lab Locations</a></li>
+        <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/resources/">Resources</a></li>
         <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink"><a class="hover:text-brand-blue" href="/lob-design-preview/en/faq/">Help &amp; FAQs</a></li>
         <li class="px-3 sm:px-6 lg:px-10 border-l border-brand-ink">
-          <a class="inline-flex items-center gap-2 hover:text-brand-blue" href="/lob-design-preview/en/for-clinics/" target="_blank" rel="noopener">For Clinics
-            <svg class="h-[15px] w-[15px] sm:h-[18px] sm:w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          <a class="inline-flex items-center gap-2 hover:text-brand-blue" href="/lob-design-preview/en/for-clinics/">For Clinics
           </a>
         </li>
       </ul>
