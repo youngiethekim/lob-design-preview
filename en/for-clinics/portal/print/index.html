@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable | Lab Online Booking</title>
+<meta name="robots" content="noindex,nofollow">
+<style id="pagesize"></style>
+<link rel="stylesheet" href="print.css">
+</head>
+<body>
+<div class="bar" id="bar">
+  <label>Format <select id="fmt"></select></label>
+  <label class="chk"><input type="checkbox" id="opt-logo"> Include our logo</label>
+  <label class="chk" id="photo-w"><input type="checkbox" id="opt-photo" checked> Include photo</label>
+  <label class="chk" id="vee-w"><input type="checkbox" id="opt-vee" checked> Include Vee</label>
+  <span class="note" id="note"></span>
+  <span class="grow"></span>
+  <span class="hint">Print at actual size (100%). Choose "Save as PDF" for a file.</span>
+  <button id="print">Print / Save as PDF</button>
+</div>
+<div class="stage" id="stage"></div>
+<script src="../config.js"></script>
+<script src="../vendor/qrcode.js"></script>
+<script src="../qr.js"></script>
+<script src="../vee.js"></script>
+<script src="../store.js"></script>
+<script src="templates.js"></script>
+</body>
+</html>
